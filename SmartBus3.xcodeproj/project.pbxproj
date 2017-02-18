@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0EFC9317AF5DD300FE121C /* BSSearchLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0EFC9217AF5DD300FE121C /* BSSearchLineViewController.m */; };
+		EA5F897E179D24E900CDC06A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5F897D179D24E900CDC06A /* MapKit.framework */; };
+		EA9E2E4F1796458100ABE7A3 /* search2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E2E4E1796458100ABE7A3 /* search2.png */; };
+		EAA080B517BC7249003DE5C3 /* map_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA080B317BC7249003DE5C3 /* map_icon.png */; };
+		EAA080B617BC7249003DE5C3 /* road.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA080B417BC7249003DE5C3 /* road.png */; };
+		EAA080B817BCD67B003DE5C3 /* fan.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA080B717BCD67B003DE5C3 /* fan.png */; };
+		EAA080C017BCDB9C003DE5C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA080BE17BCD9EF003DE5C3 /* Default@2x.png */; };
+		EAA18B7F17B772E200FAE850 /* road_icon_man.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA18B7E17B772E200FAE850 /* road_icon_man.png */; };
+		EAA18B8C17B7740500FAE850 /* road_icon_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA18B8B17B7740500FAE850 /* road_icon_bus.png */; };
+		EAA18BC117B873B800FAE850 /* BusStopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA18BC017B873B800FAE850 /* BusStopCell.m */; };
+		EAA2E0D517AE5CA80065F877 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAA2E0D417AE5CA80065F877 /* mapapi.bundle */; };
+		EAA2E0D717AE5CC00065F877 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA2E0D617AE5CC00065F877 /* libbaidumapapi.a */; };
+		EAA8371C17913C1700FA85E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8371B17913C1700FA85E7 /* UIKit.framework */; };
+		EAA8371E17913C1700FA85E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8371D17913C1700FA85E7 /* Foundation.framework */; };
+		EAA8372017913C1700FA85E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8371F17913C1700FA85E7 /* CoreGraphics.framework */; };
+		EAA8372617913C1700FA85E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA8372417913C1700FA85E7 /* InfoPlist.strings */; };
+		EAA8372817913C1700FA85E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA8372717913C1700FA85E7 /* main.m */; };
+		EAA8372C17913C1700FA85E7 /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA8372B17913C1700FA85E7 /* BSAppDelegate.m */; };
+		EAA9EFA817B8AAD9001C1ED5 /* NSString+URLEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9EFA717B8AAD9001C1ED5 /* NSString+URLEncoder.m */; };
+		EAA9F86A17B084A700C3DA3F /* BusInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9F86917B084A700C3DA3F /* BusInfoView.m */; };
+		EAB203B81792A87500E8C54C /* BSSearchBustopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB203B71792A87500E8C54C /* BSSearchBustopViewController.m */; };
+		EAB203BA1792A8B800E8C54C /* londonbus.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB203B91792A8B800E8C54C /* londonbus.png */; };
+		EABA843317BBA19C00E69EBB /* route_bus_green.png in Resources */ = {isa = PBXBuildFile; fileRef = EABA843017BBA19C00E69EBB /* route_bus_green.png */; };
+		EABA843417BBA19C00E69EBB /* route_bus_red.png in Resources */ = {isa = PBXBuildFile; fileRef = EABA843117BBA19C00E69EBB /* route_bus_red.png */; };
+		EABA843517BBA19C00E69EBB /* route_bus_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = EABA843217BBA19C00E69EBB /* route_bus_yellow.png */; };
+		EABB792E17B0DE4F0086C065 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB792D17B0DE4F0086C065 /* MyCell.m */; };
+		EABC860A17B4F065004586CE /* AdviceDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC860917B4F065004586CE /* AdviceDetailCell.m */; };
+		EABC863F17B529B1004586CE /* road_icon_begin.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC863E17B529B1004586CE /* road_icon_begin.png */; };
+		EABC864117B52A13004586CE /* road_icon_end.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC864017B52A13004586CE /* road_icon_end.png */; };
+		EAC0109C17B383C000B29C5B /* StartEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC0109B17B383C000B29C5B /* StartEndViewController.m */; };
+		EAC0109F17B392F700B29C5B /* ComeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC0109E17B392F700B29C5B /* ComeLineViewController.m */; };
+		EAC2487817B3406B005DFA79 /* CollapseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2487217B3406B005DFA79 /* CollapseClick.m */; };
+		EAC2487917B3406B005DFA79 /* CollapseClickArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2487417B3406B005DFA79 /* CollapseClickArrow.m */; };
+		EAC2487A17B3406B005DFA79 /* CollapseClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2487617B3406B005DFA79 /* CollapseClickCell.m */; };
+		EAC2487E17B34BA8005DFA79 /* AdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2487D17B34BA8005DFA79 /* AdviceViewController.m */; };
+		EAC2488217B35682005DFA79 /* CollapseClickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC2488117B35682005DFA79 /* CollapseClickCell.xib */; };
+		EAC336B817BA03B80009056A /* route_road_green.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC336B517BA03B80009056A /* route_road_green.png */; };
+		EAC336B917BA03B80009056A /* route_road_red.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC336B617BA03B80009056A /* route_road_red.png */; };
+		EAC336BA17BA03B80009056A /* route_road_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC336B717BA03B80009056A /* route_road_yellow.png */; };
+		EAC336BC17BA12440009056A /* BusDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC336BB17BA12440009056A /* BusDetailViewController.m */; };
+		EAC336C217BA13D60009056A /* StationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC336C117BA13D60009056A /* StationInfo.m */; };
+		EACD9A25179389DC00422C35 /* bar2.png in Resources */ = {isa = PBXBuildFile; fileRef = EACD9A24179389DC00422C35 /* bar2.png */; };
+		EACD9A291793A7B100422C35 /* busstop.png in Resources */ = {isa = PBXBuildFile; fileRef = EACD9A281793A7B100422C35 /* busstop.png */; };
+		EACD9A2F1793AE9E00422C35 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = EACD9A2E1793AE9E00422C35 /* arrow2.png */; };
+		EACD9A321793D22400422C35 /* UINavigationController+CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACD9A311793D22300422C35 /* UINavigationController+CustomNavigationController.m */; };
+		EAD3A0AD17AE8F0D0055ED46 /* BusOnMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A0AC17AE8F0D0055ED46 /* BusOnMapViewController.mm */; };
+		EAD3A0AF17AE8FDC0055ED46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD3A0AE17AE8FDC0055ED46 /* QuartzCore.framework */; };
+		EAD3A0B117AE8FF20055ED46 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD3A0B017AE8FF20055ED46 /* OpenGLES.framework */; };
+		EAD3A0B317AE90040055ED46 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD3A0B217AE90040055ED46 /* SystemConfiguration.framework */; };
+		EAEB346F179FAAAC00A7F1A2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB346E179FAAAC00A7F1A2 /* CoreLocation.framework */; };
+		EAEDD2C217965ADF00DA028D /* bar3.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEDD2C117965ADF00DA028D /* bar3.png */; };
+		EAF778A9179D05450068CD35 /* RealTimeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF778A8179D05450068CD35 /* RealTimeTabViewController.m */; };
+		EAF778AB179D1AFA0068CD35 /* BSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF778AA179D1AFA0068CD35 /* BSMainViewController.m */; };
+		EAFE3E28179E78EB002DEFA6 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFE3E26179E78EA002DEFA6 /* jiantou.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA0EFC9117AF5DD300FE121C /* BSSearchLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSearchLineViewController.h; sourceTree = "<group>"; };
+		EA0EFC9217AF5DD300FE121C /* BSSearchLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSearchLineViewController.m; sourceTree = "<group>"; };
+		EA0F665A179B791D0071FD8E /* BusOnMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusOnMapViewController.h; sourceTree = "<group>"; };
+		EA5F897D179D24E900CDC06A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EA9E2E4E1796458100ABE7A3 /* search2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search2.png; sourceTree = "<group>"; };
+		EAA080B317BC7249003DE5C3 /* map_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_icon.png; sourceTree = "<group>"; };
+		EAA080B417BC7249003DE5C3 /* road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road.png; sourceTree = "<group>"; };
+		EAA080B717BCD67B003DE5C3 /* fan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fan.png; sourceTree = "<group>"; };
+		EAA080BE17BCD9EF003DE5C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EAA18B7E17B772E200FAE850 /* road_icon_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road_icon_man.png; sourceTree = "<group>"; };
+		EAA18B8B17B7740500FAE850 /* road_icon_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road_icon_bus.png; sourceTree = "<group>"; };
+		EAA18BBF17B873B800FAE850 /* BusStopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopCell.h; sourceTree = "<group>"; };
+		EAA18BC017B873B800FAE850 /* BusStopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopCell.m; sourceTree = "<group>"; };
+		EAA2E0B717AE5C950065F877 /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
+		EAA2E0B817AE5C950065F877 /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
+		EAA2E0B917AE5C950065F877 /* BMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationView.h; sourceTree = "<group>"; };
+		EAA2E0BA17AE5C950065F877 /* BMKCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircle.h; sourceTree = "<group>"; };
+		EAA2E0BB17AE5C950065F877 /* BMKCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircleView.h; sourceTree = "<group>"; };
+		EAA2E0BC17AE5C950065F877 /* BMKGeneralDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeneralDelegate.h; sourceTree = "<group>"; };
+		EAA2E0BD17AE5C950065F877 /* BMKGeocodeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeocodeType.h; sourceTree = "<group>"; };
+		EAA2E0BE17AE5C950065F877 /* BMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeometry.h; sourceTree = "<group>"; };
+		EAA2E0BF17AE5C950065F877 /* BMKMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapManager.h; sourceTree = "<group>"; };
+		EAA2E0C017AE5C950065F877 /* BMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapView.h; sourceTree = "<group>"; };
+		EAA2E0C117AE5C950065F877 /* BMKMultiPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMultiPoint.h; sourceTree = "<group>"; };
+		EAA2E0C217AE5C950065F877 /* BMKOfflineMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMap.h; sourceTree = "<group>"; };
+		EAA2E0C317AE5C950065F877 /* BMKOfflineMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMapType.h; sourceTree = "<group>"; };
+		EAA2E0C417AE5C950065F877 /* BMKOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlay.h; sourceTree = "<group>"; };
+		EAA2E0C517AE5C950065F877 /* BMKOverlayPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayPathView.h; sourceTree = "<group>"; };
+		EAA2E0C617AE5C950065F877 /* BMKOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayView.h; sourceTree = "<group>"; };
+		EAA2E0C717AE5C950065F877 /* BMKPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPinAnnotationView.h; sourceTree = "<group>"; };
+		EAA2E0C817AE5C950065F877 /* BMKPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPointAnnotation.h; sourceTree = "<group>"; };
+		EAA2E0C917AE5C950065F877 /* BMKPoiSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiSearchType.h; sourceTree = "<group>"; };
+		EAA2E0CA17AE5C950065F877 /* BMKPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygon.h; sourceTree = "<group>"; };
+		EAA2E0CB17AE5C950065F877 /* BMKPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygonView.h; sourceTree = "<group>"; };
+		EAA2E0CC17AE5C950065F877 /* BMKPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolyline.h; sourceTree = "<group>"; };
+		EAA2E0CD17AE5C950065F877 /* BMKPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolylineView.h; sourceTree = "<group>"; };
+		EAA2E0CE17AE5C950065F877 /* BMKRouteSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKRouteSearchType.h; sourceTree = "<group>"; };
+		EAA2E0CF17AE5C950065F877 /* BMKSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSearch.h; sourceTree = "<group>"; };
+		EAA2E0D017AE5C950065F877 /* BMKShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKShape.h; sourceTree = "<group>"; };
+		EAA2E0D117AE5C950065F877 /* BMKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTypes.h; sourceTree = "<group>"; };
+		EAA2E0D217AE5C950065F877 /* BMKUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKUserLocation.h; sourceTree = "<group>"; };
+		EAA2E0D317AE5C950065F877 /* BMKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVersion.h; sourceTree = "<group>"; };
+		EAA2E0D417AE5CA80065F877 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = ../../BaiduMapAPI/BaiduMap_iOSSDK_v2.0.1_All/BaiduMap_iOSSDK_v2.0.1_Lib/mapapi.bundle; sourceTree = "<group>"; };
+		EAA2E0D617AE5CC00065F877 /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbaidumapapi.a; path = "../BaiduMapAPI/BaiduMap_iOSSDK_v2.0.1_All/BaiduMap_iOSSDK_v2.0.1_Lib/libs/Release-iphoneos/libbaidumapapi.a"; sourceTree = "<group>"; };
+		EAA8371817913C1700FA85E7 /* SmartBus3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBus3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA8371B17913C1700FA85E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAA8371D17913C1700FA85E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAA8371F17913C1700FA85E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAA8372317913C1700FA85E7 /* SmartBus3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartBus3-Info.plist"; sourceTree = "<group>"; };
+		EAA8372517913C1700FA85E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAA8372717913C1700FA85E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA8372917913C1700FA85E7 /* SmartBus3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartBus3-Prefix.pch"; sourceTree = "<group>"; };
+		EAA8372A17913C1700FA85E7 /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		EAA8372B17913C1700FA85E7 /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		EAA8373817913C8F00FA85E7 /* BSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMainViewController.h; sourceTree = "<group>"; };
+		EAA9EFA617B8AAD9001C1ED5 /* NSString+URLEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoder.h"; sourceTree = "<group>"; };
+		EAA9EFA717B8AAD9001C1ED5 /* NSString+URLEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoder.m"; sourceTree = "<group>"; };
+		EAA9F86817B084A700C3DA3F /* BusInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInfoView.h; sourceTree = "<group>"; };
+		EAA9F86917B084A700C3DA3F /* BusInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusInfoView.m; sourceTree = "<group>"; };
+		EAB203B61792A87500E8C54C /* BSSearchBustopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSearchBustopViewController.h; sourceTree = "<group>"; };
+		EAB203B71792A87500E8C54C /* BSSearchBustopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSearchBustopViewController.m; sourceTree = "<group>"; };
+		EAB203B91792A8B800E8C54C /* londonbus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = londonbus.png; sourceTree = "<group>"; };
+		EABA843017BBA19C00E69EBB /* route_bus_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_bus_green.png; sourceTree = "<group>"; };
+		EABA843117BBA19C00E69EBB /* route_bus_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_bus_red.png; sourceTree = "<group>"; };
+		EABA843217BBA19C00E69EBB /* route_bus_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_bus_yellow.png; sourceTree = "<group>"; };
+		EABB792C17B0DE4E0086C065 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		EABB792D17B0DE4F0086C065 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		EABC860817B4F065004586CE /* AdviceDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdviceDetailCell.h; sourceTree = "<group>"; };
+		EABC860917B4F065004586CE /* AdviceDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdviceDetailCell.m; sourceTree = "<group>"; };
+		EABC863E17B529B1004586CE /* road_icon_begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road_icon_begin.png; sourceTree = "<group>"; };
+		EABC864017B52A13004586CE /* road_icon_end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road_icon_end.png; sourceTree = "<group>"; };
+		EAC0109A17B383C000B29C5B /* StartEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartEndViewController.h; sourceTree = "<group>"; };
+		EAC0109B17B383C000B29C5B /* StartEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartEndViewController.m; sourceTree = "<group>"; };
+		EAC0109D17B392F700B29C5B /* ComeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComeLineViewController.h; sourceTree = "<group>"; };
+		EAC0109E17B392F700B29C5B /* ComeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComeLineViewController.m; sourceTree = "<group>"; };
+		EAC2487117B3406B005DFA79 /* CollapseClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollapseClick.h; path = "../../Demo/CollapseClick 2/CollapseClick/CollapseClick.h"; sourceTree = "<group>"; };
+		EAC2487217B3406B005DFA79 /* CollapseClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollapseClick.m; path = "../../Demo/CollapseClick 2/CollapseClick/CollapseClick.m"; sourceTree = "<group>"; };
+		EAC2487317B3406B005DFA79 /* CollapseClickArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollapseClickArrow.h; path = "../../Demo/CollapseClick 2/CollapseClick/CollapseClickArrow.h"; sourceTree = "<group>"; };
+		EAC2487417B3406B005DFA79 /* CollapseClickArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollapseClickArrow.m; path = "../../Demo/CollapseClick 2/CollapseClick/CollapseClickArrow.m"; sourceTree = "<group>"; };
+		EAC2487517B3406B005DFA79 /* CollapseClickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollapseClickCell.h; path = "../../Demo/CollapseClick 2/CollapseClick/CollapseClickCell.h"; sourceTree = "<group>"; };
+		EAC2487617B3406B005DFA79 /* CollapseClickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollapseClickCell.m; path = "../../Demo/CollapseClick 2/CollapseClick/CollapseClickCell.m"; sourceTree = "<group>"; };
+		EAC2487C17B34BA8005DFA79 /* AdviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdviceViewController.h; sourceTree = "<group>"; };
+		EAC2487D17B34BA8005DFA79 /* AdviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdviceViewController.m; sourceTree = "<group>"; };
+		EAC2488117B35682005DFA79 /* CollapseClickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollapseClickCell.xib; path = ../../Demo/CollapseClick/CollapseClick/CollapseClickCell.xib; sourceTree = "<group>"; };
+		EAC336B517BA03B80009056A /* route_road_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_road_green.png; sourceTree = "<group>"; };
+		EAC336B617BA03B80009056A /* route_road_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_road_red.png; sourceTree = "<group>"; };
+		EAC336B717BA03B80009056A /* route_road_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_road_yellow.png; sourceTree = "<group>"; };
+		EAC336BB17BA12440009056A /* BusDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusDetailViewController.m; sourceTree = "<group>"; };
+		EAC336C017BA13D60009056A /* StationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationInfo.h; sourceTree = "<group>"; };
+		EAC336C117BA13D60009056A /* StationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationInfo.m; sourceTree = "<group>"; };
+		EACD9A24179389DC00422C35 /* bar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar2.png; sourceTree = "<group>"; };
+		EACD9A281793A7B100422C35 /* busstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busstop.png; sourceTree = "<group>"; };
+		EACD9A2E1793AE9E00422C35 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
+		EACD9A301793D22300422C35 /* UINavigationController+CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CustomNavigationController.h"; sourceTree = "<group>"; };
+		EACD9A311793D22300422C35 /* UINavigationController+CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CustomNavigationController.m"; sourceTree = "<group>"; };
+		EAD3A0AC17AE8F0D0055ED46 /* BusOnMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BusOnMapViewController.mm; sourceTree = "<group>"; };
+		EAD3A0AE17AE8FDC0055ED46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAD3A0B017AE8FF20055ED46 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EAD3A0B217AE90040055ED46 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EAEB346E179FAAAC00A7F1A2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EAEDD2C117965ADF00DA028D /* bar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar3.png; sourceTree = "<group>"; };
+		EAF778A1179D01330068CD35 /* BusDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusDetailViewController.h; sourceTree = "<group>"; };
+		EAF778A7179D05450068CD35 /* RealTimeTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeTabViewController.h; sourceTree = "<group>"; };
+		EAF778A8179D05450068CD35 /* RealTimeTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealTimeTabViewController.m; sourceTree = "<group>"; };
+		EAF778AA179D1AFA0068CD35 /* BSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMainViewController.m; sourceTree = "<group>"; };
+		EAFE3E26179E78EA002DEFA6 /* jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiantou.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA8371517913C1700FA85E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD3A0B317AE90040055ED46 /* SystemConfiguration.framework in Frameworks */,
+				EAD3A0B117AE8FF20055ED46 /* OpenGLES.framework in Frameworks */,
+				EAD3A0AF17AE8FDC0055ED46 /* QuartzCore.framework in Frameworks */,
+				EAEB346F179FAAAC00A7F1A2 /* CoreLocation.framework in Frameworks */,
+				EA5F897E179D24E900CDC06A /* MapKit.framework in Frameworks */,
+				EAA8371C17913C1700FA85E7 /* UIKit.framework in Frameworks */,
+				EAA8371E17913C1700FA85E7 /* Foundation.framework in Frameworks */,
+				EAA8372017913C1700FA85E7 /* CoreGraphics.framework in Frameworks */,
+				EAA2E0D717AE5CC00065F877 /* libbaidumapapi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0EFC9017AF5D9B00FE121C /* SearchLineView */ = {
+			isa = PBXGroup;
+			children = (
+				EA0EFC9117AF5DD300FE121C /* BSSearchLineViewController.h */,
+				EA0EFC9217AF5DD300FE121C /* BSSearchLineViewController.m */,
+			);
+			name = SearchLineView;
+			sourceTree = "<group>";
+		};
+		EA170F8E179AA7DC00D88497 /* SearchBusstopView */ = {
+			isa = PBXGroup;
+			children = (
+				EAB203B61792A87500E8C54C /* BSSearchBustopViewController.h */,
+				EAB203B71792A87500E8C54C /* BSSearchBustopViewController.m */,
+				EAC0109D17B392F700B29C5B /* ComeLineViewController.h */,
+				EAC0109E17B392F700B29C5B /* ComeLineViewController.m */,
+				EAA18BBF17B873B800FAE850 /* BusStopCell.h */,
+				EAA18BC017B873B800FAE850 /* BusStopCell.m */,
+			);
+			name = SearchBusstopView;
+			sourceTree = "<group>";
+		};
+		EA170F8F179AA80F00D88497 /* CustomNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				EACD9A301793D22300422C35 /* UINavigationController+CustomNavigationController.h */,
+				EACD9A311793D22300422C35 /* UINavigationController+CustomNavigationController.m */,
+			);
+			name = CustomNavigationController;
+			sourceTree = "<group>";
+		};
+		EA170F90179AA91800D88497 /* BusDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				EAC336C017BA13D60009056A /* StationInfo.h */,
+				EAC336C117BA13D60009056A /* StationInfo.m */,
+				EAF778A7179D05450068CD35 /* RealTimeTabViewController.h */,
+				EAF778A8179D05450068CD35 /* RealTimeTabViewController.m */,
+				EABB792C17B0DE4E0086C065 /* MyCell.h */,
+				EABB792D17B0DE4F0086C065 /* MyCell.m */,
+				EAA9F86817B084A700C3DA3F /* BusInfoView.h */,
+				EAA9F86917B084A700C3DA3F /* BusInfoView.m */,
+				EAF778A1179D01330068CD35 /* BusDetailViewController.h */,
+				EAC336BB17BA12440009056A /* BusDetailViewController.m */,
+				EA0F665A179B791D0071FD8E /* BusOnMapViewController.h */,
+				EAD3A0AC17AE8F0D0055ED46 /* BusOnMapViewController.mm */,
+			);
+			name = BusDetailView;
+			sourceTree = "<group>";
+		};
+		EA67AB5217B1F54D0035FC84 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				EAA8373817913C8F00FA85E7 /* BSMainViewController.h */,
+				EAF778AA179D1AFA0068CD35 /* BSMainViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		EA9FBF4A17B275A900AD3CC5 /* AdviceView */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2487B17B34B55005DFA79 /* CollapseClick Components */,
+				EAC0109A17B383C000B29C5B /* StartEndViewController.h */,
+				EAC0109B17B383C000B29C5B /* StartEndViewController.m */,
+				EAC2487C17B34BA8005DFA79 /* AdviceViewController.h */,
+				EAC2487D17B34BA8005DFA79 /* AdviceViewController.m */,
+				EABC860817B4F065004586CE /* AdviceDetailCell.h */,
+				EABC860917B4F065004586CE /* AdviceDetailCell.m */,
+			);
+			name = AdviceView;
+			sourceTree = "<group>";
+		};
+		EAA2E0B617AE5C950065F877 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				EAA2E0B717AE5C950065F877 /* BMapKit.h */,
+				EAA2E0B817AE5C950065F877 /* BMKAnnotation.h */,
+				EAA2E0B917AE5C950065F877 /* BMKAnnotationView.h */,
+				EAA2E0BA17AE5C950065F877 /* BMKCircle.h */,
+				EAA2E0BB17AE5C950065F877 /* BMKCircleView.h */,
+				EAA2E0BC17AE5C950065F877 /* BMKGeneralDelegate.h */,
+				EAA2E0BD17AE5C950065F877 /* BMKGeocodeType.h */,
+				EAA2E0BE17AE5C950065F877 /* BMKGeometry.h */,
+				EAA2E0BF17AE5C950065F877 /* BMKMapManager.h */,
+				EAA2E0C017AE5C950065F877 /* BMKMapView.h */,
+				EAA2E0C117AE5C950065F877 /* BMKMultiPoint.h */,
+				EAA2E0C217AE5C950065F877 /* BMKOfflineMap.h */,
+				EAA2E0C317AE5C950065F877 /* BMKOfflineMapType.h */,
+				EAA2E0C417AE5C950065F877 /* BMKOverlay.h */,
+				EAA2E0C517AE5C950065F877 /* BMKOverlayPathView.h */,
+				EAA2E0C617AE5C950065F877 /* BMKOverlayView.h */,
+				EAA2E0C717AE5C950065F877 /* BMKPinAnnotationView.h */,
+				EAA2E0C817AE5C950065F877 /* BMKPointAnnotation.h */,
+				EAA2E0C917AE5C950065F877 /* BMKPoiSearchType.h */,
+				EAA2E0CA17AE5C950065F877 /* BMKPolygon.h */,
+				EAA2E0CB17AE5C950065F877 /* BMKPolygonView.h */,
+				EAA2E0CC17AE5C950065F877 /* BMKPolyline.h */,
+				EAA2E0CD17AE5C950065F877 /* BMKPolylineView.h */,
+				EAA2E0CE17AE5C950065F877 /* BMKRouteSearchType.h */,
+				EAA2E0CF17AE5C950065F877 /* BMKSearch.h */,
+				EAA2E0D017AE5C950065F877 /* BMKShape.h */,
+				EAA2E0D117AE5C950065F877 /* BMKTypes.h */,
+				EAA2E0D217AE5C950065F877 /* BMKUserLocation.h */,
+				EAA2E0D317AE5C950065F877 /* BMKVersion.h */,
+			);
+			name = inc;
+			path = ../../BaiduMapAPI/BaiduMap_iOSSDK_v2.0.1_All/BaiduMap_iOSSDK_v2.0.1_Lib/inc;
+			sourceTree = "<group>";
+		};
+		EAA8370F17913C1700FA85E7 = {
+			isa = PBXGroup;
+			children = (
+				EAA8372117913C1700FA85E7 /* SmartBus3 */,
+				EAA8371A17913C1700FA85E7 /* Frameworks */,
+				EAA8371917913C1700FA85E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA8371917913C1700FA85E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA8371817913C1700FA85E7 /* SmartBus3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA8371A17913C1700FA85E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAD3A0B217AE90040055ED46 /* SystemConfiguration.framework */,
+				EAD3A0B017AE8FF20055ED46 /* OpenGLES.framework */,
+				EAD3A0AE17AE8FDC0055ED46 /* QuartzCore.framework */,
+				EAA2E0D617AE5CC00065F877 /* libbaidumapapi.a */,
+				EAEB346E179FAAAC00A7F1A2 /* CoreLocation.framework */,
+				EA5F897D179D24E900CDC06A /* MapKit.framework */,
+				EAA8371B17913C1700FA85E7 /* UIKit.framework */,
+				EAA8371D17913C1700FA85E7 /* Foundation.framework */,
+				EAA8371F17913C1700FA85E7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAA8372117913C1700FA85E7 /* SmartBus3 */ = {
+			isa = PBXGroup;
+			children = (
+				EAA8372A17913C1700FA85E7 /* BSAppDelegate.h */,
+				EAA8372B17913C1700FA85E7 /* BSAppDelegate.m */,
+				EAA2E0B617AE5C950065F877 /* inc */,
+				EA67AB5217B1F54D0035FC84 /* MainView */,
+				EA9FBF4A17B275A900AD3CC5 /* AdviceView */,
+				EA170F8E179AA7DC00D88497 /* SearchBusstopView */,
+				EA0EFC9017AF5D9B00FE121C /* SearchLineView */,
+				EA170F90179AA91800D88497 /* BusDetailView */,
+				EA170F8F179AA80F00D88497 /* CustomNavigationController */,
+				EAA9EFA917B8CE7B001C1ED5 /* URLEncoder */,
+				EAA8372217913C1700FA85E7 /* Supporting Files */,
+			);
+			path = SmartBus3;
+			sourceTree = "<group>";
+		};
+		EAA8372217913C1700FA85E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA080B717BCD67B003DE5C3 /* fan.png */,
+				EAA080BE17BCD9EF003DE5C3 /* Default@2x.png */,
+				EAA080B317BC7249003DE5C3 /* map_icon.png */,
+				EAA080B417BC7249003DE5C3 /* road.png */,
+				EABA843017BBA19C00E69EBB /* route_bus_green.png */,
+				EABA843117BBA19C00E69EBB /* route_bus_red.png */,
+				EABA843217BBA19C00E69EBB /* route_bus_yellow.png */,
+				EAC336B517BA03B80009056A /* route_road_green.png */,
+				EAC336B617BA03B80009056A /* route_road_red.png */,
+				EAC336B717BA03B80009056A /* route_road_yellow.png */,
+				EAA18B8B17B7740500FAE850 /* road_icon_bus.png */,
+				EAA18B7E17B772E200FAE850 /* road_icon_man.png */,
+				EABC864017B52A13004586CE /* road_icon_end.png */,
+				EABC863E17B529B1004586CE /* road_icon_begin.png */,
+				EAA2E0D417AE5CA80065F877 /* mapapi.bundle */,
+				EAFE3E26179E78EA002DEFA6 /* jiantou.png */,
+				EAEDD2C117965ADF00DA028D /* bar3.png */,
+				EA9E2E4E1796458100ABE7A3 /* search2.png */,
+				EACD9A2E1793AE9E00422C35 /* arrow2.png */,
+				EACD9A281793A7B100422C35 /* busstop.png */,
+				EACD9A24179389DC00422C35 /* bar2.png */,
+				EAB203B91792A8B800E8C54C /* londonbus.png */,
+				EAA8372317913C1700FA85E7 /* SmartBus3-Info.plist */,
+				EAA8372417913C1700FA85E7 /* InfoPlist.strings */,
+				EAA8372717913C1700FA85E7 /* main.m */,
+				EAA8372917913C1700FA85E7 /* SmartBus3-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAA9EFA917B8CE7B001C1ED5 /* URLEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9EFA617B8AAD9001C1ED5 /* NSString+URLEncoder.h */,
+				EAA9EFA717B8AAD9001C1ED5 /* NSString+URLEncoder.m */,
+			);
+			name = URLEncoder;
+			sourceTree = "<group>";
+		};
+		EAC2487B17B34B55005DFA79 /* CollapseClick Components */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2487117B3406B005DFA79 /* CollapseClick.h */,
+				EAC2487217B3406B005DFA79 /* CollapseClick.m */,
+				EAC2487317B3406B005DFA79 /* CollapseClickArrow.h */,
+				EAC2487417B3406B005DFA79 /* CollapseClickArrow.m */,
+				EAC2487517B3406B005DFA79 /* CollapseClickCell.h */,
+				EAC2487617B3406B005DFA79 /* CollapseClickCell.m */,
+				EAC2488117B35682005DFA79 /* CollapseClickCell.xib */,
+			);
+			name = "CollapseClick Components";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA8371717913C1700FA85E7 /* SmartBus3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA8373517913C1700FA85E7 /* Build configuration list for PBXNativeTarget "SmartBus3" */;
+			buildPhases = (
+				EAA8371417913C1700FA85E7 /* Sources */,
+				EAA8371517913C1700FA85E7 /* Frameworks */,
+				EAA8371617913C1700FA85E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBus3;
+			productName = SmartBus3;
+			productReference = EAA8371817913C1700FA85E7 /* SmartBus3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA8371017913C1700FA85E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tony Zhao";
+			};
+			buildConfigurationList = EAA8371317913C1700FA85E7 /* Build configuration list for PBXProject "SmartBus3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAA8370F17913C1700FA85E7;
+			productRefGroup = EAA8371917913C1700FA85E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA8371717913C1700FA85E7 /* SmartBus3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAA8371617913C1700FA85E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA8372617913C1700FA85E7 /* InfoPlist.strings in Resources */,
+				EAB203BA1792A8B800E8C54C /* londonbus.png in Resources */,
+				EACD9A25179389DC00422C35 /* bar2.png in Resources */,
+				EACD9A291793A7B100422C35 /* busstop.png in Resources */,
+				EACD9A2F1793AE9E00422C35 /* arrow2.png in Resources */,
+				EA9E2E4F1796458100ABE7A3 /* search2.png in Resources */,
+				EAEDD2C217965ADF00DA028D /* bar3.png in Resources */,
+				EAFE3E28179E78EB002DEFA6 /* jiantou.png in Resources */,
+				EAA2E0D517AE5CA80065F877 /* mapapi.bundle in Resources */,
+				EAC2488217B35682005DFA79 /* CollapseClickCell.xib in Resources */,
+				EABC863F17B529B1004586CE /* road_icon_begin.png in Resources */,
+				EABC864117B52A13004586CE /* road_icon_end.png in Resources */,
+				EAA18B7F17B772E200FAE850 /* road_icon_man.png in Resources */,
+				EAA18B8C17B7740500FAE850 /* road_icon_bus.png in Resources */,
+				EAC336B817BA03B80009056A /* route_road_green.png in Resources */,
+				EAC336B917BA03B80009056A /* route_road_red.png in Resources */,
+				EAC336BA17BA03B80009056A /* route_road_yellow.png in Resources */,
+				EABA843317BBA19C00E69EBB /* route_bus_green.png in Resources */,
+				EABA843417BBA19C00E69EBB /* route_bus_red.png in Resources */,
+				EABA843517BBA19C00E69EBB /* route_bus_yellow.png in Resources */,
+				EAA080B517BC7249003DE5C3 /* map_icon.png in Resources */,
+				EAA080B617BC7249003DE5C3 /* road.png in Resources */,
+				EAA080B817BCD67B003DE5C3 /* fan.png in Resources */,
+				EAA080C017BCDB9C003DE5C3 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA8371417913C1700FA85E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA8372817913C1700FA85E7 /* main.m in Sources */,
+				EAA8372C17913C1700FA85E7 /* BSAppDelegate.m in Sources */,
+				EAB203B81792A87500E8C54C /* BSSearchBustopViewController.m in Sources */,
+				EACD9A321793D22400422C35 /* UINavigationController+CustomNavigationController.m in Sources */,
+				EAF778A9179D05450068CD35 /* RealTimeTabViewController.m in Sources */,
+				EAF778AB179D1AFA0068CD35 /* BSMainViewController.m in Sources */,
+				EAD3A0AD17AE8F0D0055ED46 /* BusOnMapViewController.mm in Sources */,
+				EA0EFC9317AF5DD300FE121C /* BSSearchLineViewController.m in Sources */,
+				EAA9F86A17B084A700C3DA3F /* BusInfoView.m in Sources */,
+				EABB792E17B0DE4F0086C065 /* MyCell.m in Sources */,
+				EAC2487817B3406B005DFA79 /* CollapseClick.m in Sources */,
+				EAC2487917B3406B005DFA79 /* CollapseClickArrow.m in Sources */,
+				EAC2487A17B3406B005DFA79 /* CollapseClickCell.m in Sources */,
+				EAC2487E17B34BA8005DFA79 /* AdviceViewController.m in Sources */,
+				EAC0109C17B383C000B29C5B /* StartEndViewController.m in Sources */,
+				EAC0109F17B392F700B29C5B /* ComeLineViewController.m in Sources */,
+				EABC860A17B4F065004586CE /* AdviceDetailCell.m in Sources */,
+				EAA18BC117B873B800FAE850 /* BusStopCell.m in Sources */,
+				EAA9EFA817B8AAD9001C1ED5 /* NSString+URLEncoder.m in Sources */,
+				EAC336BC17BA12440009056A /* BusDetailViewController.m in Sources */,
+				EAC336C217BA13D60009056A /* StationInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAA8372417913C1700FA85E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA8372517913C1700FA85E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAA8373317913C1700FA85E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAA8373417913C1700FA85E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA8373617913C1700FA85E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartBus3/SmartBus3-Prefix.pch";
+				INFOPLIST_FILE = "SmartBus3/SmartBus3-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../BaiduMapAPI/BaiduMap_iOSSDK_v2.0.1_All/BaiduMap_iOSSDK_v2.0.1_Lib/libs/Release-iphoneos\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAA8373717913C1700FA85E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartBus3/SmartBus3-Prefix.pch";
+				INFOPLIST_FILE = "SmartBus3/SmartBus3-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../BaiduMapAPI/BaiduMap_iOSSDK_v2.0.1_All/BaiduMap_iOSSDK_v2.0.1_Lib/libs/Release-iphoneos\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA8371317913C1700FA85E7 /* Build configuration list for PBXProject "SmartBus3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA8373317913C1700FA85E7 /* Debug */,
+				EAA8373417913C1700FA85E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA8373517913C1700FA85E7 /* Build configuration list for PBXNativeTarget "SmartBus3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA8373617913C1700FA85E7 /* Debug */,
+				EAA8373717913C1700FA85E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA8371017913C1700FA85E7 /* Project object */;
+}
